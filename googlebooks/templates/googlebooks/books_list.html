@@ -1,0 +1,11 @@
+<h1>Google Books List</h1>
+<ul>
+    {% for book in books %}
+    <li>
+        <img src="{{ book.thumbnail }}" alt="{{ book.title }}" width="80" />
+        <strong>{{ book.title }}</strong> by {{ book.authors }}<br>
+        Publisher: {{ book.publisher }}, Published: {{ book.published_date }}<br>
+        <a href="{{ book.preview_link }}" target="_blank">Preview</a>
+    </li>
+    {% endfor %}
+</ul>

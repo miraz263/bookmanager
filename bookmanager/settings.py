@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'books',
     'corsheaders',
+    'googlebooks',
 ]
 
 MIDDLEWARE = [
@@ -126,4 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
+GOOGLE_BOOKS_API_KEY = "AIzaSyD3_exampleKey1234567890"
+
+
 
